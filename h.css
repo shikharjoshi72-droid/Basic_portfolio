@@ -1,0 +1,150 @@
+/* Base styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 24px;
+    color: #243047;
+    background: #f4f7fb;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* Main title */
+h1 {
+    margin: 0;
+    padding: 36px 32px 10px;
+    color: #ffffff;
+    background: linear-gradient(135deg, #2855c5, #743de2);
+    border-radius: 16px 16px 0 0;
+    font-size: clamp(2rem, 6vw, 3.2rem);
+}
+
+h1 + p {
+    margin: 0;
+    padding: 0 32px 32px;
+    color: #ffffff;
+    background: linear-gradient(135deg, #2855c5, #743de2);
+    border-radius: 0 0 16px 16px;
+}
+
+h1 + p strong {
+    font-size: 1.2rem;
+}
+
+/* Section headings */
+h2 {
+    margin: 38px 0 16px;
+    padding-bottom: 9px;
+    color: #2448a5;
+    border-bottom: 2px solid #dce5f5;
+    font-size: 1.6rem;
+}
+
+h3 {
+    margin: 24px 0 8px;
+    color: #344b74;
+    font-size: 1.15rem;
+}
+
+/* Paragraphs and emphasis */
+p {
+    margin: 12px 0 20px;
+}
+
+strong,
+b {
+    color: #273b62;
+}
+
+em,
+i {
+    color: #5c6f91;
+}
+
+u {
+    text-decoration-color: #7e63e8;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+}
+
+/* Links */
+a {
+    display: inline-block;
+    margin: 4px 0;
+    color: #315ed1;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #743de2;
+    text-decoration: underline;
+}
+
+/* Completed labels */
+mark {
+    padding: 3px 9px;
+    color: #176b45;
+    background: #d9f6e8;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+/* Skill display and contact details */
+pre {
+    overflow-x: auto;
+    padding: 20px;
+    color: #dce7ff;
+    background: #17243c;
+    border-radius: 12px;
+    font-family: "Courier New", monospace;
+    font-size: 0.9rem;
+    line-height: 1.8;
+}
+
+/* Section separators */
+hr {
+    height: 1px;
+    margin: 32px 0;
+    background: #dce5f5;
+    border: 0;
+}
+
+/* Footer */
+h6 {
+    margin: 28px 0 0;
+    color: #74819a;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+/* Small-screen layout */
+@media (max-width: 600px) {
+    body {
+        padding: 20px 16px;
+        font-size: 15px;
+    }
+
+    h1 {
+        padding: 28px 22px 8px;
+    }
+
+    h1 + p {
+        padding: 0 22px 24px;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    pre {
+        font-size: 0.78rem;
+    }
+}
